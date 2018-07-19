@@ -154,7 +154,7 @@ function a_to_fa() {
     return a_to_vf;
 }
 document.getElementById('timer').innerHTML =
-  03 + ":" + 00;
+  00 + ":" + 10;
 startTimer();
 function startTimer() {
   var presentTime = document.getElementById('timer').innerHTML;
