@@ -154,7 +154,7 @@ function a_to_fa() {
     return a_to_vf;
 }
 document.getElementById('timer').innerHTML =
-  03 + ":" + 00;
+  00 + ":" + 05;
 startTimer();
 function startTimer() {
   var presentTime = document.getElementById('timer').innerHTML;
@@ -168,7 +168,7 @@ function startTimer() {
   setTimeout(startTimer, 1000);
 }
 function checkSecond(sec) {
-  if (sec < 10 && sec >= 0) {sec = "5" + sec}; // add zero in front of numbers < 10
+  if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
   if (sec < 0) {sec = "59"};
   return sec;
 }
